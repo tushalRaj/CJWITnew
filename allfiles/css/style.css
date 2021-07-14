@@ -514,7 +514,7 @@ a:hover {
 main {
     background: #869bad;
     /* margin-bottom: 100px; */
-    height: 100%;
+    /* height: 100%; */
 }
 
 .step-1-main {
@@ -1590,3 +1590,114 @@ span.carousel-control-next-icon {
 .firstrow-pop-desc {
     font-size: large;
 }
+
+
+/* social page css */
+.step-11-inner{
+    background: #fff;
+    padding: 25px;
+}
+.step-11-inner .step_title h2{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.1;
+    font-family: "Montserrat";
+}
+.step-11-inner .step_title p{
+    font-size:22px;
+    font-family: "Montserrat";
+}
+
+.view{
+    width: 250px;
+    height: 180px;
+    /* margin: 10px; */
+    float: left;
+    /* border: 10px solid #fff; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    /* background: #fff url(../images/bgimg.jpg) no-repeat center center; */
+    background: #141726;
+}
+
+.view-fifth img{
+    transition: all 0.3s ease-in-out;
+    display: block;
+    position: relative;
+}
+
+.view-fifth:hover .mask{
+    transform: translateX(0px);
+}
+.view-fifth h2{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0px 1px 3px rgb(159 141 140 / 50%);
+    
+}
+
+.view-fifth:hover img{
+    transform: translateX(-300px);
+    transition-delay: 0.1s;
+}
+.view-fifth p{
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 10px;
+    text-align: center;
+    opacity: 0;
+    color: #333;
+    transition: all 0.2s linear;
+}
+.view-fifth:hover p {
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+.view a.info{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.mask{
+    background-color: #869bad;
+    transform: translateX(100%);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.eachBox .mask{
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.eachBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
+.academy_left{
+    width: 100%;
+}
+/* social page css ends */

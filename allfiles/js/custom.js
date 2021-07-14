@@ -42,7 +42,7 @@ $(document).ready(function() {
             $('.btn-black').removeClass('active')
             $(this).addClass('active')
 
-
+        
             if ($('.tab-read-link').hasClass('active')) {
                 $('.tab-show-section').removeClass('active')
                 $('.read-section').addClass('active')
@@ -66,16 +66,8 @@ $(document).ready(function() {
         interval: false
     })
 
-
 })
 
-// function showimage(n) {
-//     // $('#acc3datashow').slideDown();
-//     $('.bxhovdata').hide();
-//     $('.bxhovdata').hide();
-//     $('#boxnumber' + n + 'hovdata').show();
-//     // $('#boxnumber' + n + 'hovdatam').slideDown();
-// }
 $('.num-box').hover(function(){
     $('.num-box').removeClass('active')
     $(this).addClass('active')
@@ -204,36 +196,39 @@ $('[data-toggle="collapse"]').on('click',function(e){
     }
 });
 
-$('.cstp_1').click(function(){
+$('.cstp_1').click(function(e){
+    e.preventDefault()
     $(".cdata_1").collapse("show")
     $(".cstp_2").removeClass('active')
     $(".cstp_3").removeClass('active')
     $(this).addClass('active')
 })
-$('.cstp_2').click(function(){
+$('.cstp_2').click(function(e){
+    e.preventDefault()
     $(".cdata_2").collapse("show")
     $('.cstp_1').removeClass('active')
     $('.cstp_3').removeClass('active')
     $(this).addClass('active')
 })
-$('.cstp_3').click(function(){
+$('.cstp_3').click(function(e){
+    e.preventDefault()
     $(".cdata_3").collapse("show")
     $('.cstp_1').removeClass('active')
     $('.cstp_2').removeClass('active')
     $(this).addClass('active')
 })
 
-$('[data-target="#stepOne"]').on('click', function(){
+$('[data-target="#stepOne"], [data-target="#stepFour"], [data-target="#stepTen"]').on('click', function(){
     $('.cstp_2').removeClass('active')
     $('.cstp_3').removeClass('active')
     $('.cstp_1').addClass('active')
 })
-$('[data-target="#stepTwo"]').on('click', function(){
+$('[data-target="#stepTwo"], [data-target="#stepFive"], [data-target="#stepEleven"]').on('click', function(){
     $('.cstp_1').removeClass('active')
     $('.cstp_3').removeClass('active')
     $('.cstp_2').addClass('active')
 })
-$('[data-target="#stepThree"]').on('click', function(){
+$('[data-target="#stepThree"], [data-target="#stepSix"], [data-target="#stepTwelve"]').on('click', function(){
     $('.cstp_1').removeClass('active')
     $('.cstp_2').removeClass('active')
     $('.cstp_3').addClass('active')
